@@ -8,7 +8,6 @@ export default function GoToTop() {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log(window.scrollY)
             if (window.scrollY > 280 && window.scrollY < 2900) {
                 setIsVisible(true)
             } else {
