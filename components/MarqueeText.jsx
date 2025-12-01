@@ -1,23 +1,8 @@
-"use client"
-
 import Star from "./Star";
-import {motion} from "motion/react"
 
 export default function MarqueeText() {
   return (
-    <motion.div
-    initial={{
-      opacity: 0,
-      filter: "blur(10px)"
-    }}
-    animate={{
-      opacity: 1,
-      filter: "blur(0px)"
-    }}
-    transition={{
-      duration: .3,
-      ease: "easeInOut"
-    }}
+    <div
     className="bg-[#31F900] h-12 md:h-[59px] relative z-10 overflow-x-hidden flex items-center whitespace-nowrap">
       <div className="flex gap-10 flex-nowrap animate-scroll">
         <div className="flex items-center gap-10 font-bold text-xl md:text-2xl flex-shrink-0">
@@ -63,6 +48,6 @@ export default function MarqueeText() {
           <Star />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
