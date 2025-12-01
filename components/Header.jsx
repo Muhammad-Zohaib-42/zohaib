@@ -1,12 +1,32 @@
+"use client"
+
 import GoToTop from "./GoToTop";
 import HeaderBtn from "./HeaderBtn";
 import HeaderNav from "./HeaderNav";
 import HeaderTitle from "./HeaderTitle";
 import MobileMenu from "./MobileMenu";
+import {motion} from "motion/react"
 
 export default function Header() {
   return (
-    <header id="top" className="text-white mb-3 md:mb-0">
+    <motion.header
+    initial={{
+      scale: 0.98,
+      opacity: 0,
+      filter: "blur(10px)"
+    }}
+    animate={{
+      scale: 1,
+      opacity: 1,
+      filter: "blur(0px)"
+    }}
+    transition={{
+      type: "spring",
+      stiffness: 70,
+      damping: 15,
+    }}
+    id="top"
+    className="text-white mb-3 md:mb-0 relative z-50">
       <div className="max-width flex items-center justify-between h-16 md:h-20 mb-0 md:-mb-20 relative z-30">
         <HeaderTitle />
         <HeaderNav />
@@ -14,6 +34,6 @@ export default function Header() {
         <MobileMenu />
         <GoToTop />
       </div>
-    </header>
+    </motion.header>
   );
 }

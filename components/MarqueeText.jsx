@@ -5,7 +5,20 @@ import {motion} from "motion/react"
 
 export default function MarqueeText() {
   return (
-    <motion.div initial={{opacity: 0, scaleX: 0}} animate={{opacity: 1, scaleX: 1}} transition={{duration: 0.3, ease: "easeOut"}} className="bg-[#31F900] h-12 md:h-[59px] relative z-10 overflow-x-hidden flex items-center whitespace-nowrap">
+    <motion.div
+    initial={{
+      opacity: 0,
+      filter: "blur(10px)"
+    }}
+    animate={{
+      opacity: 1,
+      filter: "blur(0px)"
+    }}
+    transition={{
+      duration: .3,
+      ease: "easeInOut"
+    }}
+    className="bg-[#31F900] h-12 md:h-[59px] relative z-10 overflow-x-hidden flex items-center whitespace-nowrap">
       <div className="flex gap-10 flex-nowrap animate-scroll">
         <div className="flex items-center gap-10 font-bold text-xl md:text-2xl flex-shrink-0">
           <h3>HTML</h3>
