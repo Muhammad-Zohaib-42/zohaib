@@ -5,6 +5,7 @@ import restCountries from "../public/rest-countries-app.png"
 import expensesTracker from "../public/expenses-tracker-app.png"
 import snakeGame from '../public/snake-game.png'
 import taskflow from '../public/taskflow-kanban-board.png'
+import imageEditor from '../public/image-editor.png'
 // import employeeManagement from "../public/employee-management-app.png"
 
 export default function Projects() {
@@ -16,6 +17,7 @@ export default function Projects() {
             <div className="mt-6 md:mt-10 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
                 <ProjectBox img={restCountries} skills={["HTML", "CSS", "JAVASCRIPT"]} title="Rest Countries App" url="https://rest-countries-app-by-constcoderr.netlify.app/" />
                 <ProjectBox img={expensesTracker} skills={["REACT JS", "TAILWIND CSS"]} title="Expenses Tracker" url="https://expenses-tracker-app-by-constcoderr.netlify.app/" />
+                <ProjectBox img={imageEditor} skills={["REACT JS", "TAILWIND CSS"]} title="Image Editor App" url="https://image-editor-k3u88awu2-muhammad-zohaibs-projects-06b04037.vercel.app/" />
                 <ProjectBox img={taskflow} skills={["HTML", "CSS", "JAVASCRIPT"]} title="Kanban Board" url="https://task-flow-bay-zeta.vercel.app/" />
                 <ProjectBox img={snakeGame} skills={["HTML", "CSS", "JAVASCRIPT"]} title="Snake Game" url="https://snake-game-omega-lac.vercel.app/" />
                 <ProjectBox img={notesTaking} skills={["HTML", "CSS", "JAVASCRIPT"]} title="Quick Notes App" url="https://quick-notes-app-by-constcoderr.netlify.app/" />

@@ -1,7 +1,3 @@
-"use client"
-
-import {motion} from "motion/react"
-
 export default function HeaderNav() {
   return (
     <nav className="space-x-6 lg:space-x-10 text-lg hidden md:block">
