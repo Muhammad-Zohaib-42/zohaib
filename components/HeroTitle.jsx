@@ -4,7 +4,7 @@ export default function HeroTitle() {
       <span className="text-[#31F900] block">
         <span className="hidden md:inline">I'm</span> Muhammad Zohaib,
       </span>
-      <span className="block">Mern<span className="hidden md:inline">-</span>Stack Developer</span>
+      <span className="block text-[30px] md:text-[40px] lg:text-5xl">Mern<span className="hidden md:inline">-</span>Stack Developer</span>
     </h1>
   );
 }
