@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Muhammad Zohaib — Developer Portfolio
 
-## Getting Started
+A clean, fully responsive personal portfolio website built with **Next.js** and **Tailwind CSS**. This repo is **open source** and can be used as a template by anyone who wants to build their own developer portfolio.
 
-First, run the development server:
+🔗 **Live Demo:** [zohaibdev-official.vercel.app](https://zohaibdev-official.vercel.app/)
 
+---
+
+## ✨ Features
+
+- ⚡ Built with **Next.js** for fast performance
+- 🎨 Styled with **Tailwind CSS**
+- 📧 Contact form powered by **EmailJS** (no backend needed)
+- 📱 Fully **responsive** — works on all screen sizes
+- 🗂️ Sections: Hero, Skills, Experience, Projects, Contact
+- 🚀 Deployed on **Vercel**
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Next.js | React Framework |
+| Tailwind CSS | Styling |
+| EmailJS | Contact Form Email Service |
+| Vercel | Deployment |
+
+---
+
+## 📁 Sections Overview
+
+- **Hero** — Introduction and CTA
+- **Skills** — Tech stack with scrolling animation
+- **Experience** — Work history timeline
+- **Projects** — Project cards with live links
+- **Contact** — EmailJS powered contact form
+
+---
+
+## 🧑‍💻 Use This As Your Own Portfolio Template
+
+This project is **open source**. If you like the design, feel free to fork it and customize it for your own portfolio.
+
+### Step 1 — Fork & Clone
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Fork this repo on GitHub, then clone it
+git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+cd REPO_NAME
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2 — Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Step 3 — Setup EmailJS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Go to [emailjs.com](https://www.emailjs.com/) and create a free account
+2. Create a **Service**, **Template**, and get your **Public Key**
+3. Create a `.env.local` file in the root folder and add:
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-## Learn More
+### Step 4 — Customize Your Info
 
-To learn more about Next.js, take a look at the following resources:
+Update the following with your own details:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 👤 **Your name & bio** — `src/` folder mein Hero section
+- 💼 **Experience** — apni job history update karein
+- 🗂️ **Projects** — apne projects ki images aur links lagayein
+- 🛠️ **Skills** — jo technologies aap jaante hain woh rakhein
+- 📞 **Contact info** — apna email, phone aur location update karein
+- 🖼️ **Your photo** — `public/` folder mein apni image replace karein
+- 📄 **Resume** — `public/` folder mein apna CV replace karein
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Step 5 — Run Locally
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Step 6 — Deploy on Vercel
+```bash
+# Install Vercel CLI
+npm install -g vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Deploy
+vercel
+```
+
+Or simply connect your GitHub repo to [vercel.com](https://vercel.com) and it will auto-deploy.
+
+---
+
+## 📸 Preview
+
+![Portfolio Preview](https://zohaibdev-official.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzohaib.d5378488.webp&w=1200&q=75)
+
+---
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Credits
+
+Designed & Developed by **Muhammad Zohaib**
+[🌐 Portfolio](https://zohaibdev-official.vercel.app/) • [📧 Email](mailto:muhammadzohaibranjha42@gmail.com)
