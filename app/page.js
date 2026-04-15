@@ -18,8 +18,8 @@ export default function Home() {
         <MarqueeText />
         <Projects />
         <MarqueeText />
-        {/* <Certificates />
-        <MarqueeText /> */}
+        <Certificates />
+        <MarqueeText />
         <Contact />
       </main>
       <MarqueeText />

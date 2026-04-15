@@ -1,7 +1,7 @@
 export default function HeaderNav() {
   return (
     <nav className="space-x-6 lg:space-x-10 text-lg hidden md:block">
-        {["Home", "Experience", "Projects", "Contact"].map((link, i) => (
+        {["Home", "Experience", "Projects", "Certificate", "Contact"].map((link, i) => (
           <a
             key={i}
             href={`#${link.toLowerCase()}`}
