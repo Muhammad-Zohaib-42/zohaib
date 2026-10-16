@@ -23,6 +23,7 @@ export default function () {
             <a onClick={() => setIsMenuOpen(false)} href="#experience" className="py-2 underline decoration-[#31F900]">Experience</a>
             <a onClick={() => setIsMenuOpen(false)} href="#projects" className="py-2 underline decoration-[#31F900]">Projects</a>
             <a onClick={() => setIsMenuOpen(false)} href="#certificate" className="py-2 underline decoration-[#31F900]">Certificate</a>
+            <a onClick={() => setIsMenuOpen(false)} href="#achievements" className="py-2 underline decoration-[#31F900]">Achievements</a>
             <a onClick={() => setIsMenuOpen(false)} href="#contact" className="py-2 underline decoration-[#31F900]">Contact</a>
           </nav>
         </div>

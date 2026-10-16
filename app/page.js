@@ -1,3 +1,4 @@
+import Achievements from "@/components/Achievements";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
@@ -19,6 +20,8 @@ export default function Home() {
         <Projects />
         <MarqueeText />
         <Certificates />
+        <MarqueeText />
+        <Achievements />
         <MarqueeText />
         <Contact />
       </main>
